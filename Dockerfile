@@ -10,7 +10,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
  #
  # Add sudo support.
  && apt-get update \
- && apt-get install -y sudo \
+ && apt-get install -y --no-install-recommends sudo \
  && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
  && chmod 0440 /etc/sudoers.d/$USERNAME \
  && apt-get -y --no-install-recommends install locales \
