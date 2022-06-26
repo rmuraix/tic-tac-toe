@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/docker-existing-dockerfile
 {
-	"name": "Existing Dockerfile",
+	"name": "tic-tsc-toe-python3.10.5",
 
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
@@ -20,7 +20,7 @@
 	// "forwardPorts": [],
 
 	// Uncomment the next line to run commands after the container is created
-	"postCreateCommand": "pip install --upgrade pip"
+	"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
 
 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
